@@ -1,4 +1,3 @@
-
 window.addEventListener("load", () => {
   alert("Hello, welcome to Charan's Portfolio Website!");
 });
@@ -18,11 +17,21 @@ document.querySelector("header").appendChild(themeToggleBtn);
 let darkMode = false;
 themeToggleBtn.addEventListener("click", () => {
   darkMode = !darkMode;
+
   document.body.style.backgroundColor = darkMode ? "#121212" : "#f7f8fa";
   document.body.style.color = darkMode ? "#f0f0f0" : "#333";
+  document.querySelector("header").style.backgroundColor = darkMode ? "#1e1e1e" : "#0078d7";
+  document.querySelector("footer").style.backgroundColor = darkMode ? "#1e1e1e" : "#333";
+
+  document.querySelectorAll("section").forEach(sec => {
+    sec.style.backgroundColor = darkMode ? "#1e1e1e" : "white";
+    sec.style.color = darkMode ? "#f0f0f0" : "#333";
+    sec.style.boxShadow = darkMode ? "0 2px 8px rgba(255,255,255,0.1)" : "0 2px 8px rgba(0,0,0,0.1)";
+  });
+
   themeToggleBtn.innerText = darkMode ? "☀️ Light Mode" : "🌙 Dark Mode";
   themeToggleBtn.style.backgroundColor = darkMode ? "#444" : "#0078d7";
-  themeToggleBtn.style.color = darkMode ? "#fff" : "#fff";
+  themeToggleBtn.style.color = "#fff";
 });
 
 const form = document.querySelector("form");
