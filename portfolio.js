@@ -1,7 +1,11 @@
+/* ===== Your Week 3 features (kept) ===== */
+
+// Greet on load
 window.addEventListener("load", () => {
   alert("Hello, welcome to Charan's Portfolio Website!");
 });
 
+// Create a theme toggle button and add dark mode
 const themeToggleBtn = document.createElement("button");
 themeToggleBtn.innerText = "🌙 Dark Mode";
 themeToggleBtn.style.margin = "10px";
@@ -26,14 +30,17 @@ themeToggleBtn.addEventListener("click", () => {
   document.querySelectorAll("section").forEach(sec => {
     sec.style.backgroundColor = darkMode ? "#1e1e1e" : "white";
     sec.style.color = darkMode ? "#f0f0f0" : "#333";
-    sec.style.boxShadow = darkMode ? "0 2px 8px rgba(255,255,255,0.1)" : "0 2px 8px rgba(0,0,0,0.1)";
+    sec.style.boxShadow = darkMode
+      ? "0 2px 8px rgba(255,255,255,0.1)"
+      : "0 2px 8px rgba(0,0,0,0.1)";
   });
 
-  themeToggleBtn.innerText = darkMode ? "☀️ Light Mode" : "🌙 Dark Mode";
+  themeToggleBtn.innerText = darkMode ? "☀ Light Mode" : "🌙 Dark Mode";
   themeToggleBtn.style.backgroundColor = darkMode ? "#444" : "#0078d7";
   themeToggleBtn.style.color = "#fff";
 });
 
+// Validate contact form
 const form = document.querySelector("form");
 form.addEventListener("submit", (event) => {
   const name = document.getElementById("name").value.trim();
@@ -55,6 +62,7 @@ form.addEventListener("submit", (event) => {
   alert(`Thank you, ${name}! Your message has been sent successfully.`);
 });
 
+// Small click animation for all buttons
 const allButtons = document.querySelectorAll("button");
 allButtons.forEach((btn) => {
   btn.addEventListener("click", () => {
@@ -64,3 +72,14 @@ allButtons.forEach((btn) => {
     }, 100);
   });
 });
+
+/* ===== Week 4: Mobile nav toggle (new) ===== */
+const navBtn = document.getElementById("nav-toggle");
+const siteNav = document.getElementById("site-nav");
+
+if (navBtn && siteNav) {
+  navBtn.addEventListener("click", () => {
+    const open = siteNav.classList.toggle("open");
+    navBtn.setAttribute("aria-expanded", String(open));
+  });
+}
