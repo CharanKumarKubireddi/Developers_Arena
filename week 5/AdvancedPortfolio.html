@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Charan Kumar — Advanced Portfolio</title>
+  <link href="AdvancedPortfolio.css" rel="stylesheet" />
+</head>
+<body>
+
+  <header class="site-header" role="banner">
+    <div class="header-inner container">
+      <div class="brand">
+        <h1>Charan Kumar</h1>
+        <p class="tag">Web Developer • HTML • Advanced CSS</p>
+      </div>
+
+      <nav id="site-nav" class="site-nav" role="navigation" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact" class="cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-grid container" role="main">
+
+    <section id="about" class="hero section-about reveal">
+      <div class="hero-content">
+        <h2>About Me</h2>
+        <p>
+          Hi — I'm <strong>Charan Kumar</strong>, currently an intern learning front-end development.
+          I focus on writing clean semantic HTML, advanced CSS layouts (Grid & Flexbox), and building
+          accessible, responsive interfaces.
+        </p>
+
+        <ul class="about-highlights">
+          <li><strong>Current:</strong> Internship — front-end tasks & portfolio</li>
+          <li><strong>Goal:</strong> Become a confident UI developer</li>
+          <li><strong>Tools:</strong> VS Code, GitHub, Chrome DevTools</li>
+        </ul>
+
+        <div class="about-cta">
+          <a class="btn" href="#projects">See Projects</a>
+          <a class="link" href="mailto:charankubireddi@gmail.com">charankubireddi@gmail.com</a>
+        </div>
+
+        <div class="social-inline">
+          <a href="https://github.com/CharanKumarKubireddi/" aria-label="GitHub">GitHub</a> • <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        </div>
+      </div>
+
+      <figure class="hero-art" aria-hidden="true">
+        <img src="data:image/jpeg;base64,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" alt="Profile picture of Charan" width="320" height="320" />
+      </figure>
+    </section>
+
+    <section id="skills" class="cards section-skills reveal">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill">
+          <div class="icon" aria-hidden="true">
+            <!-- HTML5 icon -->
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3 2l1.5 16.5L12 22l7.5-3.5L21 2H3z" fill="#E44D26"/>
+              <path d="M12 18.5l5.5-2.1L18.8 5H12v13.5z" fill="#F16529"/>
+              <path d="M12 8h5.4l-.3 3H12V8z" fill="#EBEBEB"/>
+            </svg>
+          </div>
+          <h3>HTML</h3>
+          <p>Semantic markup & accessibility.</p>
+        </div>
+
+        <div class="skill">
+          <div class="icon" aria-hidden="true">
+            <!-- CSS3 icon -->
+            <svg width="36" height="36" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3 2l1.5 16.5L12 22l7.5-3.5L21 2H3z" fill="#1572B6"/>
+              <path d="M12 18.5l5.5-2.1L18.8 5H12v13.5z" fill="#33A9DC"/>
+              <path d="M12 8h5.4l-.3 3H12V8z" fill="#fff"/>
+            </svg>
+          </div>
+          <h3>CSS</h3>
+          <p>Grid, Flexbox, variables, animations.</p>
+        </div>
+
+        <div class="skill">
+          <div class="icon" aria-hidden="true">
+            <!-- JS icon (simple) -->
+            <svg width="36" height="36" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <rect width="24" height="24" rx="3" fill="#F7DF1E"/>
+              <path d="M9.5 16.5c.9 1.4 2.2 2 3.5 2 .9 0 1.4-.3 1.4-1.2 0-.9-.7-1.2-1.6-1.7l-.6-.3c-1.8-.9-3-2-3-4 0-2 1.5-3.6 4.2-3.6 2 0 3.4.6 4.4 2l-1.9 1.2c-.5-.8-1-1.1-1.9-1.1-1 0-1.6.5-1.6 1.2 0 .9.7 1.2 2.3 1.8l.6.3c2 .9 3.2 2 3.2 4.2 0 2.6-2 4-4.8 4-2.7 0-4.5-1.2-5.4-3l1.9-1.2z" fill="#000"/>
+            </svg>
+          </div>
+          <h3>JavaScript</h3>
+          <p>DOM basics & interactivity (learning).</p>
+        </div>
+
+        <div class="skill">
+          <div class="icon" aria-hidden="true">
+            <!-- Git icon -->
+            <svg width="36" height="36" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3 12.5l9-6 4 2.6" stroke="#F34F29" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="6" cy="18" r="1.5" fill="#F34F29"/>
+              <circle cx="18" cy="6" r="1.5" fill="#F34F29"/>
+              <circle cx="15" cy="15" r="1.5" fill="#F34F29"/>
+            </svg>
+          </div>
+          <h3>Git</h3>
+          <p>Version control and GitHub workflow.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects section-projects reveal">
+      <h2>Projects</h2>
+      <div class="projects-layout">
+        <article class="project featured">
+          <div class="project-inner">
+            <h3>Featured — Personal Portfolio</h3>
+            <p>A mobile-first, responsive portfolio showcasing CSS Grid, Flexbox, variables, and refined transitions.</p>
+            <p class="meta">Tech: HTML • Advanced CSS</p>
+            <a class="link" href="personal-portfolio.html" target="_blank" rel="noopener">Open project</a>
+          </div>
+        </article>
+
+        <div class="project-tiles">
+          <article class="project tile">
+            <h4>Bio Page</h4>
+            <p>Structured personal bio with image and lists.</p>
+            <a class="link" href="bio.html" target="_blank" rel="noopener">View</a>
+          </article>
+
+          <article class="project tile">
+            <h4>Contact Form</h4>
+            <p>Clean form layout using native validation.</p>
+            <a class="link" href="contact.html" target="_blank" rel="noopener">View</a>
+          </article>
+
+          <article class="project tile">
+            <h4>Mini Widgets</h4>
+            <p>Small UI components for learning and reuse.</p>
+            <a class="link" href="#" rel="noopener">Demo</a>
+          </article>
+
+          <article class="project tile">
+            <h4>CSS Experiments</h4>
+            <p>Gradients, clip-path and transitions explored.</p>
+            <a class="link" href="#" rel="noopener">Explore</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact section-contact reveal">
+      <h2>Contact Me</h2>
+      <div class="contact-grid">
+        <form id="contact-form" class="contact-form" action="#" method="post" novalidate>
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required>
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+
+        <aside class="contact-info" aria-labelledby="contact-alt">
+          <h3 id="contact-alt">Other ways to reach me</h3>
+          <p>Email: <a href="mailto:charankubireddi@gmail.com">charankubireddi@gmail.com</a></p>
+          <p>GitHub: <a href="https://github.com/CharanKumarKubireddi/" target="_blank" rel="noopener">github.com/yourusername</a></p>
+          <p>Location: Your City, Country</p>
+        </aside>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner container">
+      <p>&copy; <span id="year">2025</span> Charan Kumar</p>
+      
+    </div>
+  </footer>
+
+</body>
+</html>
